@@ -17,16 +17,14 @@ addTaskBtn.addEventListener("click", () => {
     taskContent.textContent = taskText;
 
     const editIcon = document.createElement("img");
-    editIcon.src = "https://cdn-icons-png.flaticon.com/512/1159/1159633.png"; // Edit icon
-    editIcon.alt = "Edit";
+    editIcon.src = "https://cdn-icons-png.flaticon.com/512/1159/1159633.png";
     editIcon.addEventListener("click", () => {
         const newText = prompt("Edit your task:", taskContent.textContent);
         if (newText) taskContent.textContent = newText.trim();
     });
 
     const deleteIcon = document.createElement("img");
-    deleteIcon.src = "https://cdn-icons-png.flaticon.com/512/3096/3096673.png"; // Delete icon
-    deleteIcon.alt = "Delete";
+    deleteIcon.src = "https://cdn-icons-png.flaticon.com/512/3096/3096673.png";
     deleteIcon.addEventListener("click", () => {
         taskDiv.remove();
     });
